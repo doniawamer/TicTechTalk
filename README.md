@@ -1,27 +1,22 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Modern Business](http://startbootstrap.com/template-overviews/modern-business/)
+<b>Inspiration</b>
+We are all students in STEM, and at some point in our lives - or in the future - we would have to apply for jobs. Most job and scholarship applications have the first round of interviews online. Our website was born out of the desire to have a place where developers can practice in real time and get great feedback
 
-[Modern Business](http://startbootstrap.com/template-overviews/modern-business/) is a multipurpose, full website template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This template includes 17 unique HTML pages and a working PHP contact form.
+<b>What it does</b>
+It's a platform to collaboratively solve technical interview problems in real time, take mock technical interviews, and review other people’s code. We make use of chat rooms where users can post questions, and join in conversations.
 
-## Getting Started
+<b>How we built it</b>
+We used html and css to create a web-based platform to allow users to practice tech skills
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/modern-business/)
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-modern-business.git`
-* Fork the repo
+<b>Challenges we ran into</b>
+Working with bootstrap was annoying sometimes, and settling on an idea.
 
-## Bugs and Issues
+<b>Accomplishments that we're proud o</b>
+We helped solve a problem for developers searching for jobs by providing a platform where they can practice their interview skills and collaborate with other developers to get helpful feedback
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-modern-business/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/modern-business/).
+<b>What we learned</b>
+We learned Bootstrap, HTML, CSS and JavaScript. We also learned how to divide problems into teams and work together to have a whole product at the end.
 
-## Creator
+<b>What's next for #TicTechTalk</b>
+tictechtalk.org We would like to keep on building our website and brand. We would have premium options implemented with shopify, where users can get more questions, have a real mock interview with an agent from the company who can give life feedback. Also, users can buy tickets for tech talks and workshops.
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
-
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-modern-business/blob/gh-pages/LICENSE) license.
+Also, we look forward to implementing this in the corporate world, where people who have the same ideas can find each other and work together, thereby creating more exciting ideas where entrepreneurs rise!
