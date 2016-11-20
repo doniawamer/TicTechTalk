@@ -1,30 +1,172 @@
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/main.css">
-
-<div class="main-wrapper">
-  <!--Upper tab-->
-  <div class="upper-wrapper">
-    Type your answer here!
-  </div>
-
-    <!--editor input page-->
-    <div id="texteditor">
-      <!--Left: text-editor -->
-      <div id ="editor">
-        <textarea id="text-input"></textarea>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tech Talk</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- First panel-->
+      <div id="option" style="margin: 20% 10%" class="col-sm-8 col-sm-offset-2 col-md-offset-3 col-md-9">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-title"> Select your option
+            </div>
+          </div>
+          <div style="height: 200px" class="panel-body">
+            <div style ="margin: 20px" class = "form-group">
+              <div class="col-sm-12 controls">
+                <!--div class="categories"-->
+                Are you ready to try out your technical interview?
+                Select one of the following options:
+                  <a style="margin-top: 20px;" href="#" onclick="$('#option').hide(); $('#category-selection').show()" id="btn-category" class="btn btn-info btn-block">
+                    Select your own categories
+                  </a>
+                  <a href="#" onclick="$('#option').hide(); $('#main-wrapper').show()" id="btn-random" class="btn btn-primary btn-block">
+                    ... Or Feeling Tech-savvy?
+                  </a>
+                </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!--Right: where timer, question and hints are available -->
-      <div id="question-info">
-        <div id ="timer">
-          timer goes here
+
+      <!--Pt 2.1: Select the categories of your interest-->
+      <div id="category-selection" style="margin: 20% 10%; display: none;" class="col-sm-8 col-sm-offset-2 col-md-offset-3 col-md-9">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-title"> Pick your categories
+            </div>
+          </div>
+          <div style="height: 200px" class="panel-body">
+            <div style ="margin: 20px" class = "form-group">
+              <div class="col-sm-12 controls">
+                <!--div class="categories"-->
+                <h4>Select the category of the question you would like to get tested on:</h4>
+                <form>
+                    <label class="radio-inline">
+                      <input type="radio" name="optradio">Arrays and Strings
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="optradio">Linked List
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="optradio">Greedy Algorithm
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="optradio">Dynamic Programming
+                    </label>
+                    <span style="margin: 10px">
+                      <input type="submit" class="btn btn-block btn-success" onclick="$('#category-selection').hide(); $('#main-wrapper').show()" value="Submit Button">
+                    </span>
+                  </form>
+                </div>
+            </div>
+          </div>
         </div>
-        <div id ="question">
-          <strong>One Away</strong>: Implement a method to perform basic string
-          compression using the counts of repeated characters. For example, the string aabcccccaaa would become a2b1c5a3. If the "compressed" string would not become smaller than the original string, your method should return the original string. You can assume the string has only uppercase and lowercase letters (a-z).
-        </div>
-        <div id ="hint">
-          hint goes here
+      </div>
+
+      <!-- Part 2.2: or not... randomize the questions! -->
+
+      <!-- Part 3: write down your answer! -->
+      <div id="main-wrapper" style ="display: none;">
+        <!--Upper tab-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-title"> Ready, Set, GO! </div>
+          </div>
+
+          <!--editor input page-->
+          <div class="panel-body">
+            <!--Left: text-editor -->
+            <div class="col-md-8" id ="editor">
+              <textarea placeholder="Type your answer here!" style="min-width: 100%; min-height: 300px" class="form-control col-md-12" id="text-input"></textarea>
+              <span style="margin: 10px">
+                <input type="submit" class="btn btn-block btn-primary" onclick="alert('You have successfully submited your code!')" value="Submit Button">
+              </span>
+            </div>
+
+            <!--Right: where timer, question and hints are available -->
+            <div class="col-md-4">
+              <!-- Record yourself -->
+              <div style="margin-bottom: 30px" class="videoWrapperOuter">
+                <div class="videoWrapperInner">
+                  <iframe src="https://www.youtube.com/embed/RY7vcYvb69k"
+                  frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+
+              <!-- Timer -->
+              <div style="margin-bottom: 50px;" class="panel panel-warning" >
+                <div class="col-md-12 panel-heading">
+                  <div class="panel-title">
+                    <a data-toggle="collapse" href="#collapse1">Timer (Click to see) </a>
+                  </div>
+                </div>
+                <div class="panel-collapse collapse" id="collapse1">
+                  <div class="counter panel-body" id ="timer">
+                      1:00
+                      <script>
+                      function countdown() {
+                          var seconds = 60;
+
+                          function tick() {
+                              var timer = document.getElementById("timer");
+                              seconds--;
+                              timer.innerHTML = "0:" + (seconds < 10 ? "0" : "") + String(seconds);
+                              if( seconds > 0 ) {
+                                  setTimeout(tick, 1000);
+                              } else {
+                                  alert("Time is UP! Well done, my friend :) \n Your code has been automatically submitted.");
+                              }
+                          }
+                          tick();
+                      }
+
+                      countdown();
+
+                      </script>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question -->
+              <div class="panel panel-info">
+                <div class="col-md-12 panel-heading">
+                  <div class="panel-title">
+                    Question
+                  </div>
+                </div>
+                <div class="panel-body" id ="question">
+                  <div style="margin: 10px">
+                    <strong>One Away</strong>: Implement a method to perform basic string
+                    compression using the counts of repeated characters. For example, the string aabcccccaaa would become a2b1c5a3. If the "compressed" string would not become smaller than the original string, your method should return the original string. You can assume the string has only uppercase and lowercase letters (a-z).
+                  </div>
+                </div>
+              </div>
+
+              <!--Hint -->
+              <div class="panel panel-success">
+                <div class="col-md-12 panel-heading">
+                  <div class="panel-title">
+                    <a data-toggle="collapse" href="#collapse2">Hint (Click to see) </a>
+                  </div>
+                </div>
+                <div class="panel-collapse collapse" id="collapse2">
+                  <div class="panel-body" id ="hint">
+                    <div style="magin: 10px">
+                      Hint appears here!
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </body>
+</html>
