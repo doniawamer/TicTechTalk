@@ -11,7 +11,7 @@
   padding: 10px;
   border-radius: 10px;
 }
-/*
+
 .categories a{
   color:#444F51;
   text-decoration: none;
@@ -19,7 +19,7 @@
   vertical-align: middle;
   line-height: normal;
 }
-*/
+
 .randomizer {
   text-align: center;
   width: 500px;
@@ -35,15 +35,12 @@
   Interview Coding page
 */
 
-#main-wrapper {
+.main-wrapper {
   margin: 0 auto;
+  width: 80%;
+  height: 80%;
+  background-color: black;
   border-radius: 25px;
-}
-
-.counter {
-  font-size: 50px;
-  text-align: center;
-  color: #555;
 }
 
 .upper-wrapper{
@@ -65,52 +62,29 @@
 #question-info {
   width: 30%;
   height: 100%;
+  background-color: green;
   float: right;
   vertical-align:top;
 }
 
+#timer {
+  height: 10%;
+  background-color: #5DCCCC;
+  text-align: center;
+  padding: 10px;
+}
+
 #question {
   height: 70%;
+  color: #c3d4e5;
   padding: 10px 10px;
+  background-color: #086375;
   text-align: center;
 }
 
-.videoWrapperOuter {
-  max-width:640px;
-  margin-left:auto;
-  margin-right:auto;
+#hint {
+  height: 20%;
+  background-color: #444F51;
+  color: #FFF;
+  text-align: center;
 }
-.videoWrapperInner {
-  float: none;
-  clear: both;
-  width: 100%;
-  position: relative;
-  padding-bottom: 50%;
-  padding-top: 25px;
-  height: 0;
-}
-.videoWrapperInner iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/*
-  Submit Form
-*/
-.red{
-    color:red;
-    }
-.radio-opt {
-   padding: 6px 12px;
-}
-.form-area
-{
-  background-color: #FAFAFA;
-	padding: 10px 40px 60px;
-	margin: 10px 30px 60px;
-	border: 1px solid #c3d4e5;
-  border-radius: 25px;
-	}
