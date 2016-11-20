@@ -9,19 +9,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>#TicTechTalk</title>
+    <title>Modern Business - Start Bootstrap Template</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- Custom CSS -->
-    <style>
-    body {
-        padding-top: 70px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-    </style>
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,19 +42,73 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">#TicTechTalk</a>
+                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#mockinterview">Login</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="#mockinterview">Mock Technical Interview</a>
+                        <a href="services.html">Services</a>
                     </li>
                     <li>
-                        <a href="#login">Practice</a>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-item.html">Single Portfolio Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="blog-home-1.html">Blog Home 1</a>
+                            </li>
+                            <li>
+                                <a href="blog-home-2.html">Blog Home 2</a>
+                            </li>
+                            <li>
+                                <a href="blog-post.html">Blog Post</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="full-width.html">Full Width Page</a>
+                            </li>
+                            <li>
+                                <a href="sidebar.html">Sidebar Page</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="404.html">404</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html">Pricing Table</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -66,237 +117,194 @@
         <!-- /.container -->
     </nav>
 
+    <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 1</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 3</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
     <!-- Page Content -->
     <div class="container">
 
+        <!-- Marketing Icons Section -->
         <div class="row">
-            <div class="col-lg-12 text-center">
-          
-                <table class="maintable">
-                   <tr>
-                       <th colspan="2"> <img src="coding1.jpg" width=100% height="auto"  style="margin-top: -20px"> </th>
-                       </tr>
-                    <tr>
-                    <th width=28%>
-                        <!--Second Pannel-->
-                    <div class="panel panel-default"   style="margin-top: -140px">
-                    <div class="panel-body"> <h4>Current Chart Rooms</h4></div>
-                       
-                        <table class="table2" align="center">
-                    <tr>
-                        <th>
-                        <span style="font-weight:normal;">
-                      
-                        <div class="over">
-                        <i class="fa fa-circle" aria-hidden="true"></i>  
-                        &nbsp;
-                        <div class="textp">
-                        <u>Algorithm Approaches</u>
-                        </div>
-                        </div>
-                        <br>
-                        
-                        <br> 
-                        <div class="under">
-                        <i class="fa fa-circle" aria-hidden="true"></i>  
-                        &nbsp;
-                        <div class="textp">
-                        <u>Memory Limits</u>
-                        </div>
-                        </div>
-                        <br>
-
-                        <br> 
-                        <div class="under">
-                        <i class="fa fa-circle" aria-hidden="true"></i>  
-                        &nbsp;
-                        <div class="textp">
-                        <u>Memory Limits</u>
-                        </div>
-                        </div>
-                        <br>
-
-                        <br> 
-                        <div class="over">
-                        <i class="fa fa-circle" aria-hidden="true"></i>  
-                        &nbsp;
-                        <div class="textp">
-                        <u>Databases</u>
-                        </div>
-                        </div>
-                        <br>
-
-                        <br> 
-                        <div class="under">
-                        <i class="fa fa-circle" aria-hidden="true"></i>  
-                        &nbsp;
-                        <div class="textp">
-                        <u>Threads and Locks</u>
-                        </div>
-                        </div>
-                        <br>
-                        <br> 
-                        <div class="over">
-                        <i class="fa fa-circle" aria-hidden="true"></i>  
-                        &nbsp;
-                        <div class="textp">
-                        <u>Sorting and Searches</u>
-                        </div>
-                        </div>
-                        <br>
-
-                        <br> 
-                        <div class="under">
-                        <i class="fa fa-circle" aria-hidden="true"></i>  
-                        &nbsp;
-                        <div class="textp">
-                        <u>Sorting and Searches</u>
-                        </div>
-                        </div>
-                        <br>
-
-                        <br> 
-                        <div class="under">
-                        <i class="fa fa-circle" aria-hidden="true"></i>  
-                        &nbsp;
-                        <div class="textp">
-                        <u>Data Structures</u>
-                        </div>
-                        </div>
-                        <br>
-
-                        <br> 
-                        <div class="over">
-                        <i class="fa fa-circle" aria-hidden="true"></i>  
-                        &nbsp;
-                        <div class="textp">
-                        <u>Data Structures</u>
-                        <br><br><br>
-                        </span>
-                        </div>
-                        </div>
-                        </th>
-
-                        <!-- Next -->
-                        <th>
-                        <span style="font-weight:normal;">
-                        <div class="textp">
-                        4 users
-                        </div>
-                        <br>
-                        
-                        <br> 
-                        <div class="textp">
-                        2 users
-                        </div>
-                        <br>
-
-                        <br> 
-                        <div class="textp">
-                        2 users
-                        </div>
-                        <br>
-
-                        <br> 
-                        <div class="textp">
-                        4 users
-                        </div>
-                        <br>
-
-                        <br> 
-                        <div class="textp">
-                        3 users
-                        </div>
-                        <br>
-
-                        <br> 
-                        <div class="textp">
-                        4 users
-                        </div>
-                        <br>
-
-                        <br> 
-                        <div class="textp">
-                        3 users
-                        </div>
-                        <br>
-
-                        <br> 
-                        <div class="textp">
-                        2 users
-                        </div>
-                        <br>
-
-                        <br> 
-                        <div class="textp">
-                        4 users
-                        </span>
-                        </div>
-                       <br> <br> <br>
-                        </th>
-                    </tr>         
-                    </th>
-                    </tr>
-                    </table>
-
-                        <th> 
-                <!--first Pannel
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Welcome to Modern Business
+                </h1>
+            </div>
+            <div class="col-md-4">
                 <div class="panel panel-default">
-                     <div class="panel-body"> -->
-                        <h1 style="margin-top: 12px">Practice</h1>
-                        <br> 
-                                              
-                        <b><h4>Hone your technical skills and gain the confidence you need to ace your technical interview</h4></b>
-                        <br>
-                        <div class="mtext">
-                        <span style="font-weight:normal;">
-                        <i class="fa fa-search" aria-hidden="true"></i>
-
-                        Learn how to uncover hidden details in question 
-                        <br><br>
-                        <i class="fa fa-code-fork" aria-hidden="true"></i>
-                        Learn how to break difficult problems into manageable bits
-                        <br><br>
-                        <i class="fa fa-question-circle" aria-hidden="true"></i>
-                        Learn how to utilize core computer science concept while solving problems
-                        
-                        </span>
-                        <!--
-                        <span style="font-weight:normal;">
-                        <i class="fa fa-terminal" aria-hidden="true"></i>
-                        Choose a chat room to join from those that are currently live in order to collaborate with fellow developers 
-                        on brainstorming and writing solutions for interview questions in real-time!
-                        </span>
-                        -->
-                        <br><br><br><br><br>
-                        <div class="SpanButton">
-                            <a id="btn-category" class="btn btn-info" href="">
-                            Join a Chat Room
-                        </a>
-                        <br> <br>
-                        <a class="btn btn-primary" href="">
-                        Create Your Own!
-                        </a>
-                        <br><br><br> <br><br><br> <br><br><br><br>
-                    
-                        
-                        </div>
-                        </th>
-
-                    </table>
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-check"></i> Bootstrap v3.3.7</h4>
                     </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn-default">Learn More</a>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- /.row -->
+
+        <!-- Portfolio Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Portfolio Heading</h2>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Features Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Modern Business Features</h2>
+            </div>
+            <div class="col-md-6">
+                <p>The Modern Business template by Start Bootstrap includes:</p>
+                <ul>
+                    <li><strong>Bootstrap v3.3.7</strong>
+                    </li>
+                    <li>jQuery v1.11.1</li>
+                    <li>Font Awesome v4.2.0</li>
+                    <li>Working PHP contact form with validation</li>
+                    <li>Unstyled page elements for easy customization</li>
+                    <li>17 HTML pages</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Call to Action Section -->
+        <div class="well">
+            <div class="row">
+                <div class="col-md-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+                </div>
+                <div class="col-md-4">
+                    <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
 
     </div>
     <!-- /.container -->
 
-    <!-- jQuery Version 1.11.1 -->
+    <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
 
 </body>
 
