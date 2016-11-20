@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="js/form.js"></script>
+
+<div class="container">
+<div class="col-md-8">
+    <div class="form-area">
+        <form role="form">
+        <br style="clear:both">
+              <h3 style="margin-bottom: 25px; text-align: center;">Submit your questions here</h3>
+      					<div class="form-group required">
+      						<input type="text" class="form-control" id="title" name="title" placeholder="Title of your question" required>
+      					</div>
+                <div class="form-group required">
+                  <label class="radio radio-opt"> <input type="radio" id="AS" name="optradio"> Arrays and Strings </label>
+                  <label class="radio radio-opt"> <input type="radio" id="LL" name="optradio">Linked List </label>
+                  <label class="radio radio-opt"> <input type="radio" id="GA" name="optradio">Greedy Algorithm</label>
+                  <label class="radio radio-opt"> <input type="radio" id="DP" name="optradio">Dynamic Programming</label>
+              </div>
+                    <div class="form-group">
+                      <textarea class="form-control" style="max-height: 100px" type="textarea" id="question" placeholder="Question" maxlength="140" rows="7"></textarea>
+                    </div>
+
+
+                    <button onclick="get_action()" type="button" id="submit" name="submit" class="btn btn-primary btn-block">Submit Your Question</button>
+        </form>
+    </div>
+</div>
+</div>
