@@ -1,0 +1,90 @@
+/*
+  Interview selection page
+*/
+
+.category-selection {
+  text-align: center;
+  width: 500px;
+  height: 50px;
+  background-color: #B1ED5E;
+  margin: 50px auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.categories a{
+  color:#444F51;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.randomizer {
+  text-align: center;
+  width: 500px;
+  text-decoration: none;
+  height: 50px;
+  background-color: #5DCCCC;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/*
+  Interview Coding page
+*/
+
+.main-wrapper {
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
+  background-color: black;
+  border-radius: 25px;
+}
+
+.upper-wrapper{
+  height: 10%;
+  color: white;
+  padding: 10px;
+  background-color: #444F51;
+  font-size: 20px;
+  text-align: center;
+}
+
+#text-input {
+  width: 70%;
+  height: 90%;
+  background-color: white;
+  float: left;
+}
+
+#question-info {
+  width: 30%;
+  height: 100%;
+  background-color: green;
+  float: right;
+  vertical-align:top;
+}
+
+#timer {
+  height: 10%;
+  background-color: #5DCCCC;
+  text-align: center;
+  padding: 10px;
+}
+
+#question {
+  height: 70%;
+  color: #c3d4e5;
+  padding: 10px 10px;
+  background-color: #086375;
+  text-align: center;
+}
+
+#hint {
+  height: 20%;
+  background-color: #444F51;
+  color: #FFF;
+  text-align: center;
+}
