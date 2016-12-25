@@ -10,7 +10,7 @@ We used html and css to create a web-based platform to allow users to practice t
 <b>Challenges we ran into</b><br>
 Working with bootstrap was annoying sometimes, and settling on an idea.
 
-<b>Accomplishments that we're proud o</b><br>
+<b>Accomplishments that we're proud of</b><br>
 We helped solve a problem for developers searching for jobs by providing a platform where they can practice their interview skills and collaborate with other developers to get helpful feedback
 
 <b>What we learned</b><br>
